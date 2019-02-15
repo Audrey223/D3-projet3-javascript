@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audrey Beziat</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>Where u go <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+			<h1>Places u need to keep in mind</h1>
+			<nav>
+				<a href="http://tympanus.net/Blueprints/FilterableProductGrid/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+				<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+				<a href="http://tympanus.net/codrops/?p=24330" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+				<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+			</nav>
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/montagne.PNg" alt="montagne" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+					<p>Le Pic du Midi ouvre un espace de ski unique dans les Pyrénées. </p>
+				</div>
+				<h2 class="slide__title"><span>Simply</span> Mountains</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/LAKE.jpg" alt="LAKE" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+					<p>Un grand lac de cratère monomictique situé dans un maar volcanique en sommeil associé au complexe Mount Gambier Maar. </p>
+				</div>
+
+
+				<h2 class="slide__title"><span>The blue</span> LAKE</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/maverick.jpg" alt="maverick" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+
+					</div>
+					<p>Mavericks est une destination hivernale pour certains des meilleurs surfeurs de grosses vagues du monde.</p>
+				</div>
+				<h2 class="slide__title"><span>The good wave</span> MAERICKS</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/foret.jpg" alt="forest" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+					<p>The Red Forest is the 10-square-kilometer (4 sq mi) area surrounding the Chernobyl Nuclear Power Plant within the Exclusion Zone located in Polesia. The name "Red Forest" comes from the ginger-brown color of the pine trees after they died following the absorption of high levels of radiation from the Chernobyl accident on 26 April 1986. In the post-disaster cleanup operations, the Red Forest was bulldozed and buried in "waste graveyards". The site of the Red Forest remains one of the most contaminated areas in the world today.</p>
+				</div>
+				<h2 class="slide__title"><span>The RED</span> FOREST</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/espace.jpg" alt="Espace" />
+						<div class="preview rounded">
+
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+					<p>Outer space, or just space, is the expanse that exists beyond the Earth and outside of any astronomical object. Outer space is not completely empty—it is a hard vacuum containing a low density of particles, predominantly a plasma of hydrogen and helium as well as electromagnetic radiation, magnetic fields, neutrinos, dust, and cosmic rays. The baseline temperature, as set by the background radiation from the Big Bang, is 2.7 kelvins (−270.45 °C; −454.81 °F). The plasma between galaxies accounts for about half of the baryonic (ordinary) matter in the universe; it has a number density of less than one hydrogen atom per cubic metre and a temperature of millions of kelvins;[2] local concentrations of this plasma have condensed into stars and galaxies. Studies indicate that 90% of the mass in most galaxies is in an unknown form, called dark matter, which interacts with other matter through gravitational but not electromagnetic forces. Observations suggest that the majority of the mass-energy in the observable universe is a poorly understood vacuum energy of space, which astronomers label dark energy.[5][6] Intergalactic space takes up most of the volume of the universe, but even galaxies and star systems consist almost entirely of empty space.</p>
+				</div>
+				<h2 class="slide__title"><span>The inaccessible</span> SPACE</h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="images/iphone-content.png" alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>LE LAC BLEU 6</h2>
+					<h3>Une beauté à couper le souffle</h3>
+					<p>Le Blue Lake est un grand lac de cratère monomictique situé dans un maar volcanique en sommeil associé au complexe Mount Gambier Maar. Le lac est situé près du mont Gambier, dans la région de la côte calcaire de l’Australie du Sud, et est l’un des quatre lacs de cratère du mont Gambier maar. Sur les quatre lacs, il ne reste que deux, les deux autres s’étant asséchés au cours des 30 à 40 dernières années, la nappe phréatique s’étant abaissée.
+Des dates conflictuelles ont été estimées pour sa dernière éruption, il y a 4 300 ans, il y a 28 000 ans et, plus récemment, il y a un peu avant 6 000 ans. Si la date la plus récente est correcte, il pourrait s'agir de la plus récente éruption volcanique sur le continent australien.
+On pense que le lac Blue a une profondeur moyenne de 72 m, mais atteint parfois 75 m de profondeur (mais certaines valeurs non confirmées indiquent une profondeur maximale de 204 m (669 ft) en raison d’une section de grotte naturelle). Le bord du cratère mesure 1 200 mètres sur 824 m, mais le lac lui-même mesure 1 087 mètres sur 657 m. Le fond du lac est à 17 m en dessous du niveau de la rue principale de la ville voisine. Le lac bleu alimente la ville en eau potable.</p>
+					<p><a href="https://www.apple.com/iphone-6/technology/">Learn more about this technology &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="images/ipad-content.jpg" alt="iPad Mini Content" />
+				<div class="content__item-inner">
+					<h2>LE PIC DU MIDI</h2>
+					<h3>Une vue hors du commun</h3>
+					<p>A l'instar de l'Aiguille du Midi à Chamonix et de La Grave dans les Alpes, le Pic du Midi ouvre un espace de ski unique dans les Pyrénées. C'est ainsi qu'à compter du 9 décembre, le 1er et le 2ème tronçon du téléphérique La Mongie-Le Taoulet et Le Taoulet-Pic du Midi seront ouverts aux skieurs aguerris. Ils accéderont ainsi à un domaine exceptionnel de ski de haute montagne.</p>
+					<p><a href="http://www.n-py.com/fr/pic-du-midi">Pour en savoir plus...</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/macbook-content.jpg" alt="MacBook Content" />
+				<div class="content__item-inner">
+					<h2>MAVERICKS</h2>
+					<h3>Avis aux plus grands surfeurs</h3>
+					<p>Mavericks est un site de surf situé dans le nord de la Californie, en dehors du port de Pillar Point, juste au nord de la ville de Half Moon Bay, dans le village de Princeton-by-the-Sea. Après une forte tempête hivernale dans le nord de l'océan Pacifique, les vagues peuvent régulièrement atteindre une crête supérieure à 8 mètres et atteindre leur sommet à plus de 18 mètres. En règle générale, les ondes qui se brisent peuvent être enregistrées sur des sismomètres. La rupture est causée par une formation rocheuse sous-marine de forme inhabituelle.
+Mavericks est une destination hivernale pour certains des meilleurs surfeurs de grosses vagues du monde. Un concours sur invitation seulement est organisé la plupart des hivers, lorsque les vagues suffisent.</p>
+					<p><a href="http://www.theriderpost.com/disciplines/water/surf/la-vague-geante-de-mavericks-sest-reveillee/">Pour en savoir plus...</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/imac-content.jpg" alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2>CHERNOBYL</h2>
+					<h3>Les arbres morts ne pourrissent pas à Tchernobyl, et c'est un réel danger</h3>
+					<p>Chaque nouveau Mac est fourni avec Photos, iMovie, GarageBand, Pages, Numbers et Keynote. Vous pouvez dès lors être créatif avec vos photos, vidéos, musique, documents, feuilles de calcul et présentations. Vous disposez également d'excellentes applications pour la messagerie électronique, la navigation sur le Web, l'envoi de SMS et les appels FaceTime. Il existe même une application permettant de rechercher de nouvelles applications.</p>
+					<p><a href="http://www.slate.fr/monde/85211/arbres-pourrissent-pas-tchernobyl-danger-nucl%C3%A9aire">Pour en savoir plus...</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/vide.jpg" alt="Empty space" />
+				<div class="content__item-inner">
+					<h2>SPACE</h2>
+					<h3>The most empty place in the Universe</h3>
+					<p>In order to see the oldest light in the Universe, simply set an old television set between two channels: the tiny dots that dance on the screen correspond to the fact that the antenna is constantly bombarded by photons some of which were issued about 380,000 years after the Big Bang, some 13.8 billion years ago. These photons fly through space in all directions, and correspond to an average temperature of 2.7 kelvin (-270.45 ° C). They form the cosmic microwave background. The two-dimensional map of this radiation is in a way the first photograph of the Universe, in its youth. </p>
+					<p><a href="https://www.pourlascience.fr/sd/cosmologie/lendroit-le-plus-vide-de-lunivers-9388.php">Pour en savoir plus...</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
