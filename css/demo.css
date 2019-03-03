@@ -15,9 +15,15 @@
 
 /* Resets */
 *,
-*:after,
+*:after {
+	box-sizing: border-box;
+	color: #6d181e;
+	font-weight: bold;
+}
 *:before {
 	box-sizing: border-box;
+	color: white;
+	font-weight: bold;
 }
 
 html {
@@ -53,15 +59,17 @@ html {
 body {
 	font-family: "Avenir", 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	color: #CECECE;
-	background: #0B0B23;
+	background: black;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 a {
 	text-decoration: none;
-	color: #5C5EDC;
+	color: #6d181e;
 	outline: none;
+	font-size: 10px;
+	text-align: right ;
 }
 
 a:focus {
@@ -91,19 +99,20 @@ a:hover {
 	margin: 0 0 .6em 0;
 	font-family: 'lobster';
 	text-align: center;
+	color: white;
 }
 
 .bp-header h1 > span {
 	font-size: 50%;
 	display: block;
-	color: #4D4D5A;
+	color: white;
 }
 
 .bp-header > span {
 	width: 100%;
 	font-weight: 700;
 	font-size: 0.85em;
-	color: yellow ;
+	color: white ;
 	position: relative;
 	z-index: 100;
 	display: block;
@@ -121,6 +130,8 @@ a:hover {
 	width: 30px;
 	height: 30px;
 	cursor: help;
+	color: #6d181e;
+
 }
 
 .bp-header > span span:hover:before {
@@ -198,6 +209,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	text-indent: 0;
+	color: #6d181e;
 }
 
 .bp-header nav a:hover:after {
@@ -206,6 +218,7 @@ a:hover {
 
 .bp-icon-next:after {
 	content: '\e000';
+
 }
 
 .bp-icon-drop:after {
@@ -223,6 +236,7 @@ a:hover {
 .bp-icon-prev:after {
 	content: '\e004';
 }
+
 
 @media screen and (max-width: 40em) {
 	.bp-header {
